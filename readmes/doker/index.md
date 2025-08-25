@@ -6,7 +6,7 @@
 
 📌 `docker-compose.yml`
 
-Postgres
+#### <span style="color:#efb423">*º Postgres*</span>
 
 ````ts
 services:
@@ -19,8 +19,6 @@ services:
     ports:
       - "5432:5432"
 ````
-
-----
 
 ### Volumes: criando banco temporário para testes
 
@@ -37,9 +35,7 @@ Criar pasta na raiz do projeto docker/setup.sql
 CREATE DATABASE desafio_test
 ````
 
-----
-
-API
+#### <span style="color:#efb423">*° API*</span>
 
 ````ts
 version: "3.9"
