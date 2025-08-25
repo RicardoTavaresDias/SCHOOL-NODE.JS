@@ -76,6 +76,8 @@ Caminho: `> settings.json`
 
 Copiar e colar no notepad e salvar como html, realizar importação nos favoritos no navegador
 
+🔹 favorito.html
+
 ````bash
 
 <!DOCTYPE NETSCAPE-Bookmark-file-1>
