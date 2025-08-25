@@ -51,7 +51,7 @@ docker stop <container ID>
 doker rm <container ID ou volume name>
 ````
 
-ou
+*ou*
 
 ````
 doker rm -f <container ID ou volume name>
@@ -63,7 +63,7 @@ doker rm -f <container ID ou volume name>
 doker rmi <image ID>
 ````
 
-ou
+*ou*
 
 ````
 doker rmi -f <image ID>
