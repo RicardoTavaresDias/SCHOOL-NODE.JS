@@ -13,6 +13,10 @@
 #### <span style="color:#efb423">*🔹 Postgres*</span>
 
 ````ts
+npm i pg
+````
+
+````ts
 services:
   db:
     image: postgres:latest
@@ -23,6 +27,27 @@ services:
     ports:
       - "5432:5432"
 ````
+
+#### <span style="color:#efb423">*🔹 Mysql*</span>
+
+````ts
+npm i mysql2
+````
+
+````ts
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: APITasks
+    restart: always
+    ports:
+      - '3306:3306'
+    environment:
+      - MYSQL_ROOT_PASSWORD=2478be40dd94892b1e2573d234d4529d
+      - MYSQL_DATABASE=APITasks
+````
+
+---
 
 ### Volumes: criando banco temporário para testes
 
@@ -38,6 +63,8 @@ Criar pasta na raiz do projeto docker/setup.sql
 ````ts
 CREATE DATABASE desafio_test
 ````
+
+----
 
 #### <span style="color:#efb423">*🔹 API*</span>
 
@@ -102,4 +129,29 @@ EXPOSE 3333
 # Executa o arquivo src/server.ts usando o Node.js
 
 CMD [ "node", "src/server.ts" ]
+````
+
+🔹 Outro modelo Dockerfile
+
+````ts
+# Usa uma imagem base, por exemplo, o Node.js 18
+FROM node:20-alpine3.20
+
+# Define o diretório de trabalho dentro do contêiner
+WORKDIR /usr/src/app
+
+# Copia os arquivos de dependência e instala
+COPY . .
+
+# Executa o comando para instalação node_modules
+RUN npm install
+
+#Executa o comando para executar para converter o typescript
+RUN npm run build
+
+# Expõe a porta que a sua aplicação vai usar
+EXPOSE 3000
+
+# Comando para rodar a aplicação quando o contêiner iniciar
+CMD ["npm", "start"]
 ````
