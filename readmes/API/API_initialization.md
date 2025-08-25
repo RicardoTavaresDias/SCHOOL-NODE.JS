@@ -27,8 +27,17 @@ npm i zod
 `Typescript`
 ````bash
 npm i typescript -D
+````
+
+````bash
 npm i tsx
+````
+
+````bash
 npm i tsup  // coverte typescript para javascript na produção
+````
+
+````bash
 npm i ts-node
 ````
 
@@ -66,6 +75,9 @@ npm i ts-node
 
 ````bash
 npm i @prisma/client
+````
+
+````bash
 npm i prisma -D
 ````
 package.json
