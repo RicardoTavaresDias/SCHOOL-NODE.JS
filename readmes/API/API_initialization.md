@@ -1,15 +1,21 @@
 ## Inicializar com instalação das dependências do projeto
 
 `Cors`
-
 ````bash
 npm i cors
+````
+
+````bash
 npm i @types/cors -D
 ````
+
 
 `Express`
 ````bash
 npm i express
+````
+
+````bash
 npm i @types/express -D
 ````
 
@@ -74,14 +80,20 @@ package.json
 ## Bcrypt
 
 ````bash
-npm i @types/bcrypt -D
 npm i bcrypt
+````
+
+````bash
+npm i @types/bcrypt -D
 ````
 
 ## Token
 
 ````bash
 npm i jsonwebtoken
+````
+
+````bash
 npm i @types/jsonwebtoken -D
 ````
 
