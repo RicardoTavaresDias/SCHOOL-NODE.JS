@@ -110,7 +110,7 @@ Possivel visualizar e testar antes de motificar.
 
 ----
 
-### 🔹 Promovendo para produção
+### 🔹 Promovendo branche para produção
 
 *Troca o branch atual para o main.*
 
