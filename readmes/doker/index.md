@@ -6,25 +6,25 @@
 
 ----
 
-*Lista o conteiners em execução*
+🔸 *Lista o conteiners em execução*
 
 ````
 docker ps -a
 ````
 
-*Lista imagens baixadas para utilizar*
+🔸 *Lista imagens baixadas para utilizar*
 
 ````
 docker image ls
 ````
 
-*Realizar instalação da imagem na aplicação dentro do container*
+🔸 *Realizar instalação da imagem na aplicação dentro do container*
 
 ````
 docker build -t api .  
 ````
 
-*Realizar mapeamento de porta que foi definido na imagem no documento Dockerfile e do 
+🔸 *Realizar mapeamento de porta que foi definido na imagem no documento Dockerfile e do 
 projeto*
 
 ````
@@ -33,19 +33,19 @@ docker run -p 3333:3333 -d api
 
 ----
 
-*start*
+🔹 *start*
 
 ````
 docker start <container ID>
 ````
 
-*stop*
+🔹 *stop*
 
 ````
 docker stop <container ID>
 ````
 
-*Remover container*
+🔹*Remover container*
 
 ````
 doker rm <container ID ou volume name>
@@ -57,7 +57,7 @@ ou
 doker rm -f <container ID ou volume name>
 ````
 
-*Remover image*
+🔹*Remover image*
 
 ````
 doker rmi <image ID>
@@ -72,25 +72,25 @@ doker rmi -f <image ID>
 
  ### Dicas avançado
 
-*Cria imagem*
+🔻 *Cria imagem*
 
 ````
 docker build -t api_chatbot_ai .
 ````
 
-*Roda a aplicação*
+🔻 *Roda a aplicação*
 
 ````
 docker run -p 3000:3000 api_chatbot_ai
 ````
 
-*Rodar com variavel de ambiente pelo docker => sem o nome no containers*
+🔻 *Rodar com variavel de ambiente pelo docker => sem o nome no containers*
 
 ````
 docker run --env-file .env -p 3000:3000 api_chatbot_ai
 ````
 
-*Esse dar nome no containers mais variavel de ambiente*
+🔻 *Esse dar nome no containers mais variavel de ambiente*
 
 ````
 docker run --name api_chatbot_ai_container --env-file .env -p 3000:3000 api_chatbot_ai
