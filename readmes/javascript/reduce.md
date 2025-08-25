@@ -1,3 +1,7 @@
+- [VOLTAR](./index.md)
+
+</br>
+
 # Reduce Javascript
 
 Agrupar registros duplicados com reduce, consolidando campos únicos e armazenando variações em arrays

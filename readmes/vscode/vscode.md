@@ -1,3 +1,5 @@
+- [VOLTAR](../../README.md)
+
 # Configuração VS CODE - 24/08/25
 
 Caminho: `> settings.json`

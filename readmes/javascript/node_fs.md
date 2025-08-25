@@ -1,3 +1,7 @@
+- [VOLTAR](./index.md)
+
+</br>
+
 🔹 Encodings mais usados no Node.js
 
 *  utf8 → padrão do Node.js (se não especificado).
