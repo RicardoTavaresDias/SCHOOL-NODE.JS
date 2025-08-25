@@ -6,7 +6,7 @@
 
 📌 `docker-compose.yml`
 
-#### <span style="color:#efb423">*º Postgres*</span>
+#### <span style="color:#efb423">*🔹 Postgres*</span>
 
 ````ts
 services:
@@ -35,7 +35,7 @@ Criar pasta na raiz do projeto docker/setup.sql
 CREATE DATABASE desafio_test
 ````
 
-#### <span style="color:#efb423">*° API*</span>
+#### <span style="color:#efb423">*🔹 API*</span>
 
 ````ts
 version: "3.9"

@@ -4,7 +4,7 @@ This README provides a guide to initialize an Express API project with TypeScrip
 
 ## Table of Contents
 - [Inicialização do projeto API](./readmes/API/API_initialization.md)
-- [JavaScript Reduce](./readmes/javascript/reduce.md)
+- [JavaScript](./readmes/javascript/index.md)
 - [Configuration VS CODE](./readmes/VSCODE/vscode.md)
 - [Typescript](./readmes/typescript/index.md)
 - [Zod](./readmes/zod/index.md)
