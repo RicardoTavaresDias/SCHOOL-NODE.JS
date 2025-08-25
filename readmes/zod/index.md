@@ -11,15 +11,27 @@ const createUserSchema = z.object({
 })
 ````
 
-### Tipagem com Schema
+Tipagem com Schema
 
 ````ts
 type CreateUsersType = z.infer<typeof createUserSchema>
 ````
 
+Validação com schema
+
+````ts
+  const createData = createUserSchema.safeParse(request.body)
+
+  if(!createData.success) {
+    return response.status(400).json({ 
+      message: createData.error.issues[0].message 
+    })
+  }
+````
+
 ----
 
-### Omit - remover propriedades
+## Omit - Remover propriedades
 
 ````ts
 const updateUserSchema = z.object({
