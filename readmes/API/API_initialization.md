@@ -1,24 +1,24 @@
 ## Inicializar com instalação das dependências do projeto
 
-Cors
+`Cors`
 
 ````bash
 npm i cors
 npm i @types/cors -D
 ````
 
-Express
+`Express`
 ````bash
 npm i express
 npm i @types/express -D
 ````
 
-Zod
+`Zod`
 ````bash
 npm i zod
 ````
 
-Typescript
+`Typescript`
 ````bash
 npm i typescript -D
 npm i tsx
@@ -85,7 +85,7 @@ npm i jsonwebtoken
 npm i @types/jsonwebtoken -D
 ````
 
-# Pasta do projeto
+## Pasta do projeto
 
 ```
 EXPRESS-SWAGGER/
@@ -99,7 +99,7 @@ EXPRESS-SWAGGER/
 └── .env                  # Variáveis de ambiente
 ```
 
-## app.ts
+`app.ts`
 
 ````ts
 import express from "express"
@@ -123,7 +123,7 @@ app.use(ErrorHandling)
 export { app }
 ````
 
-## server.ts
+`server.ts`
 
 ````ts
 import { app } from "./app";
@@ -132,7 +132,7 @@ import { env } from "./config/env.config";
 app.listen(env.PORT, () => console.log("Server in running port " + env.PORT))
 ````
 
-## routes/index.ts
+`routes/index.ts`
 ````ts
 import { Router } from "express";
 import { userRouter } from "@/modules/users/routers/user.router";
@@ -142,7 +142,7 @@ export const router = Router()
 router.use("/user", userRouter)
 ````
 
-## routes/user.router.ts
+`routes/user.router.ts`
 
 ````ts
 import { Router } from "express";

@@ -1,7 +1,6 @@
-## Extender request do express 
+## Estendendo o objeto Request do Express 
 
-express.d.ts
-
+`express.d.ts`
 ````ts
 declare namespace Express {
   export interface Request {

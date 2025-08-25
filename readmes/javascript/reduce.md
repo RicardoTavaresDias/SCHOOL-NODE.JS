@@ -1,8 +1,8 @@
 # Reduce Javascript
 
-Acumulador Reduce, para construir dados de objetos repetidos, com arrays, com dados diferentes objeto
+Agrupar registros duplicados com reduce, consolidando campos únicos e armazenando variações em arrays
 
-### Exemplo de dados vindo do banco de dados, repetindo.
+### Exemplo de dados retornados do banco com duplicações.
 
 ````ts
 
@@ -74,7 +74,7 @@ const object = [
 
 ````
 
-### Realizando reduce para equalizar os dados
+### Transformando dados duplicados em uma estrutura única com `reduce`
 
 ````ts
 const teste = object.reduce((acc, item) => {
@@ -117,7 +117,7 @@ const result = Object.values(teste)
 
 ````
 
-# Saída
+### Saída:
 
 ````ts
 [
@@ -187,7 +187,7 @@ const result = Object.values(teste)
 
 ----
 
-### Exemplo quando tem services e comment repetidos e também o objeto inteiro.
+### Exemplo contendo duplicações de serviços, comentários e do próprio objeto
 
 ````ts
 const refature = query.rows.reduce((acc, called, index) => {

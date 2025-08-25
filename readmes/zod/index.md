@@ -1,4 +1,4 @@
-## Removendo propriedades do schema
+## Removendo campos de um schema existente
 
 exemplo:
 
@@ -11,13 +11,13 @@ const createUserSchema = z.object({
 })
 ````
 
-Tipagem com Schema
+`Tipagem com Schema`
 
 ````ts
 type CreateUsersType = z.infer<typeof createUserSchema>
 ````
 
-Validação com schema
+`Validação com schema`
 
 ````ts
   const createData = createUserSchema.safeParse(request.body)
@@ -31,7 +31,7 @@ Validação com schema
 
 ----
 
-## Omit - Remover propriedades
+## Omit – Criar um schema sem determinadas propriedades
 
 ````ts
 const updateUserSchema = z.object({
@@ -42,12 +42,37 @@ const updateUserSchema = z.object({
 })
 ````
 
-saída
+`saída`
 
 ````ts
 {
   name: string
   email: string
+}
+````
+
+## Baseando-se em um schema existente e incrementando novos atributos
+
+````ts
+const createSchema = z.object({
+  ...createUserSchema.omit({
+    id: true,
+    role: true
+  }).shape,
+
+  id: z.string().uuid(),
+  role: z.string().default("member")
+})
+````
+
+`saída`
+
+````ts
+{
+  id: string
+  name: string
+  email: string
+  role: string
 }
 ````
 
