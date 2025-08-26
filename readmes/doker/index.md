@@ -2,7 +2,7 @@
 
 </br>
 
-<img src="./assets/docker.jpg" alt="Logo do projeto" />
+<img src="./assets/docker.jpg" alt="Logo do projeto" style="display: block; margin: 0 auto;" />
 
 ----
 
