@@ -2,7 +2,7 @@
 
 </br>
 
-<img src="./assets/logo.png" alt="Logo do projeto" width="200"/>
+<img src="./assets/docker.jpg" alt="Logo do projeto" />
 
 ----
 
