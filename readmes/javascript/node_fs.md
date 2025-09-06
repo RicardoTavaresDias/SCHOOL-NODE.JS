@@ -58,3 +58,9 @@ await fs.promises.writeFile("./saida.txt", "Conteúdo de exemplo", "utf8");
 const arquivos = fs.readdirSync("./pasta-exemplo");
 console.log(arquivos);
 ````
+
+🔹 Remove arquivos e diretórios
+
+````ts
+fs.promises.rm("./pasta-exemplo", { recursive: true })
+````
