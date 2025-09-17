@@ -179,3 +179,11 @@ export const userRouter = Router()
 
 userRouter.get("/", validateUserId, userController.showUser)
 ````
+
+----
+
+### 🔹 Criando seu arquivo Prisma Schema com o seguinte comando:
+
+````
+npx prisma init --datasource-provider postgresql
+````
