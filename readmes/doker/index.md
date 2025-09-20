@@ -120,6 +120,12 @@ services:
       - "5432:5432"
 ````
 
+execute: 
+
+````
+docker-compose up -d
+````
+
 #### <span style="color:#efb423">*🔹 Mysql*</span>
 
 ````ts
@@ -137,6 +143,12 @@ services:
     environment:
       - MYSQL_ROOT_PASSWORD=2478be40dd94892b1e2573d234d4529d
       - MYSQL_DATABASE=APITasks
+````
+
+execute: 
+
+````
+docker-compose up -d
 ````
 
 ---
